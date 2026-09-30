@@ -28,7 +28,7 @@ Other steps: parsed day-first dates (`dayfirst=True`), calculated `LENGTH_OF_STA
 
 ## Layer 3: Power BI (Dashboard)
 
-`Healthcare_Dashboard.pbix` — a dashboard built directly on the cleaned data using DAX measures (not pre-aggregated in Python), including a measure that uses context transition to recalculate correctly when broken down by diagnosis.
+`Healthcare_Dashboard.pbix` — a dashboard built directly on the cleaned data using DAX measures (not pre-aggregated in Python), including a measure that uses context transition to recalculate correctly when broken down by diagnosis.[Dashboard screenshot](Dashboard_screenshot.png)
 
 
 ## Tools Used
