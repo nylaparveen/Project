@@ -46,6 +46,6 @@ Full results: `evaluation_results.csv`. The cutoff of 1.0 was chosen by looking 
 Python, pypdf, ChromaDB (embeddings via all-MiniLM-L6-v2)
 
 ## Screenshots
-![Good answer](answer_example.png.png)
-![Refusal](refusal_example.png.png)
-![Evaluation results](evaluation_results.png.png)
+![Good answer](answer_example.png)
+![Refusal](refusal_example.png)
+![Evaluation results](evaluation_results.png)
