@@ -2,7 +2,7 @@
 
 A small semantic-search tool over public health documents. You ask a question in plain English; it returns the most relevant passages with the **file name and page number**, and says "I could not find this in the provided documents" when the question is outside the documents.
 
-**Scope note:** this version does retrieval only. It does not use a language model to write answers, so nothing is generated or paraphrased. Adding an LLM generation step is a planned next step (`04_ask.py` is a draft for that and is untested).
+**Scope note:** This version does retrieval only. It does not use a language model to write answers, so nothing is generated or paraphrased. Adding an LLM generation step is a planned next step and has not been built yet.
 
 ## How it works
 1. **Load** PDFs with `pypdf`
@@ -19,6 +19,7 @@ A small semantic-search tool over public health documents. You ask a question in
 - WHO Global Report on Diabetes (2016)
 
 Put them in `documents_health/` and run `python 01_load_and_chunk.py`, `python 02_build_index.py`, then `python 04_ask_nokey.py "your question"`.
+Example: python 04_ask_nokey.py "What HbA1c target should be offered to adults with type 2 diabetes?"
 
 ## Evaluation (15 questions, checked by hand against the PDFs)
 | Question type | Count | Best-match distance range |
@@ -44,5 +45,7 @@ Full results: `evaluation_results.csv`. The cutoff of 1.0 was chosen by looking 
 ## Tools
 Python, pypdf, ChromaDB (embeddings via all-MiniLM-L6-v2)
 
-![Good answer](screenshots/answer_example.png)
-![Refusal](screenshots/refusal_example.png)
+## Screenshots
+![Good answer](answer_example.png.png)
+![Refusal](refusal_example.png.png)
+![Evaluation results](evaluation_results.png.png)
