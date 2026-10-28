@@ -1,0 +1,18 @@
+# Vector database (rebuild with 02_build_index.py)
+chroma_db/
+
+# Secrets - never commit these
+.env
+*.key
+secrets*
+
+# Python / editor leftovers
+__pycache__/
+*.pyc
+tempCodeRunnerFile.py
+.venv/
+
+# PDFs: ignored by default because they can be large.
+# If you want to publish them, delete this line (check each file's licence first).
+documents_health/*.pdf
+documents_general/*.pdf
